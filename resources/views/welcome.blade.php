@@ -14,11 +14,12 @@
         <style>
             html, body {
                 background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
+        color: #636b6f;
+        font-family: 'Nunito', sans-serif;
+        background-image: url('/img/back.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
             }
 
             .full-height {
@@ -69,12 +70,12 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}" style="font-size: 20px">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}" style="font-size: 20px">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a href="{{ route('register') }}" style="font-size: 20px">Registrar</a>
                         @endif
                     @endauth
                 </div>
@@ -82,18 +83,14 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Projeto para a Udok
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://github.com/AlexmarJr/Udok_Project" style="font-size: 20px">Projeto no GitHub</a>
+                    <a href="https://www.linkedin.com/in/alexmar-noronha-1b4596160/" style="font-size: 20px">Linkedin</a>
+                    <a href="http://udok-project.herokuapp.com/" style="font-size: 20px">Site no Ar</a>
+                    
                 </div>
             </div>
         </div>
